@@ -1,0 +1,296 @@
+
+/*========= all body ========*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+body{
+    background: #e6e7e9;
+}
+ol, ul {
+    padding-left: 10%;
+}
+
+
+/*======= side menu ========*/
+.Side-menu{
+    position: relative;
+    width: 100%;
+}
+.navigation{
+    position: fixed;
+    width: 15%;
+    height: 100%;
+    background: #23a2cd;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.navigation.active{
+    width: 5%;
+}
+.navigation ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.navigation ul li{
+    position: relative;
+    width: 100%;
+    list-style: none;
+   
+}
+.navigation ul li{
+    color: white;
+    text-decoration: none;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+
+    
+    
+}
+.navigation ul li:hover,
+.navigation ul li.hovered{
+    color: rgb(241, 176, 10);
+    background: #e6e7e9;
+}
+.navigation ul li:nth-child(1){
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+.navigation ul li a{
+    position: relative;
+    display: block;
+    width: 60%;
+    display: flex;
+    text-decoration: none;
+    color: white;
+}
+
+.navigation ul li:hover a,
+.navigation ul li.hovered a{
+    color: rgb(250, 182, 10);
+}
+.navigation ul li a .icon{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60%;
+    line-height: 60px;
+    text-align: center;
+}
+.navigation ul li a .icon ion-icon{
+    font-size: 20.1em;
+}
+
+.navigation ul li a .title{
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    white-space: normal;
+}
+
+
+
+/*========== top-area =======*/
+.top_area{
+    position: absolute;
+    width: calc(81% -35%);
+    left: 14%;
+    transition: 0.5s;
+    margin-top: 10px;
+}
+.top_area.active{
+    width: calc(81% -35%);
+    left: 4%;
+}
+.topbar{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+.toggle{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/*========= searchbar ==========*/
+.form {
+    position: relative;
+    width: 100%;
+}
+
+.form .fa-search {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    color: #9ca3af;
+    cursor: pointer;
+}
+
+.form-input {
+    height: 40px;
+    text-indent: 33px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.form-input:focus {
+    box-shadow: none;
+    border: none;
+}
+
+.user{
+    width: 40px;
+    height: 40px;
+    background: white;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.user i{
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+
+/*==========Card Area ==========*/
+.card_first_col{
+    width: 65%;
+    float: left;
+    padding: 10px 24px;
+}
+
+.second_row{
+    width: 35%;
+    float: left;
+    margin: 10px 0px;
+}
+
+.card{
+    text-align: center;
+}
+.card-title {
+    font-size: 16px;
+}
+.card-text{
+    font-size: 10px;
+}
+.card span{
+    padding: 5px 0px;
+}
+
+
+/**====== first_col ======*/
+.first_col_first_row .card-title{
+    padding: 5px 0px;
+}
+
+.first_col_first_row img {
+    /* font-size: 15px; */
+    width: 60%;
+    height: 40%;
+    margin: 10px 0px;
+    text-align: center;
+}
+
+.first_col_second_row{
+    margin: 10px 0px;
+}
+.first_col_second_row img{
+    width: 90%;
+}
+
+.first_col_third_row img{
+    margin: 40px 0px;
+    width: 70%;
+}
+
+/*========= second_col =========*/
+.second_col_first_row{
+    padding-bottom: 5px;
+    padding-top: 12px;
+}
+
+.second_col_first_row .card-title{
+    margin-top: 15px;
+}
+
+.second_col_first_row .card-body{
+    padding-top: 0px;
+    margin: 0px;
+}
+.second_col_first_row .card{
+    border: none;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+.second_col_first_row .card img{
+    width: 12%;
+}
+.second_col_first_row .card_4 .card-title{
+    font-size: 10px;
+    
+}
+
+.second_col_first_row .card_4 .card-text{
+    font-size: 5px;
+    text-align: justify;
+}
+
+.card_bottom_text{
+    font-size: 5px;
+    text-indent: 50px;
+    text-align: justify;
+    padding-top: 5px;
+}
+
+.fl{
+    float: left;
+    text-align: justify;
+}
+
+.fr{
+    float: right;
+    text-align: justify;
+}
+.list-group-item {
+    position: relative;
+    display: block;
+    /* padding: .5rem 1rem; */
+    color: #212529;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    font-size: 13px;
+    
+}
+.second_col_second_row{
+    margin-top: 20px;
+}
+.second_col_second_row .list-group {
+    padding-bottom: 10px;
+}
+.list-group-item span p:nth-child(1){
+    color: yellow;
+    background: green;
+   
+}
